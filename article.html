@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python入门到精通 - LearnHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    LearnHub
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="#" class="active">教程</a></li>
+                    <li><a href="#">资源</a></li>
+                    <li><a href="#">关于</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <div class="container">
+            <!-- 返回按钮 -->
+            <div class="back-button">
+                <a href="index.html" class="btn btn-outline"><i class="fas fa-arrow-left"></i> 返回教程列表</a>
+            </div>
+
+            <!-- 教程详情 -->
+            <section class="tutorial-section">
+                <div class="tutorial-detail">
+                    <div class="tutorial-header">
+                        <h1 class="tutorial-title">Python入门到精通</h1>
+                        <div class="tutorial-meta">
+                            <span><i class="far fa-user"></i> 张老师</span>
+                            <span><i class="far fa-calendar-alt"></i> 2023-08-15</span>
+                            <span><i class="far fa-eye"></i> 1245浏览</span>
+                            <span><i class="far fa-star"></i> 4.9 (86评价)</span>
+                        </div>
+                    </div>
+
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Python教程" class="tutorial-cover">
+
+                    <div class="tutorial-content">
+                        <h2>Python简介</h2>
+                        <p>Python是一种高级编程语言，以其简洁的语法和强大的功能而闻名。它由Guido van Rossum于1991年首次发布，如今已成为最受欢迎的编程语言之一。</p>
+                        <p>Python的设计哲学强调代码的可读性和简洁性，特别是使用空格缩进来划分代码块，而不是使用大括号或关键字。这使得Python代码看起来非常整洁和易于理解。</p>
+
+                        <h2>为什么选择Python？</h2>
+                        <p>Python具有许多优点，使其成为初学者和专业开发人员的理想选择：</p>
+                        <ul>
+                            <li>简单易学：语法清晰直观，接近自然语言</li>
+                            <li>跨平台：可在Windows、macOS和Linux上运行</li>
+                            <li>丰富的库：拥有庞大的标准库和第三方库生态系统</li>
+                            <li>社区支持：拥有活跃的开发者社区和丰富的学习资源</li>
+                            <li>多用途：可用于Web开发、数据分析、人工智能、科学计算等</li>
+                        </ul>
+
+                        <h2>安装Python</h2>
+                        <p>要开始使用Python，首先需要在计算机上安装Python解释器。以下是安装步骤：</p>
+                        <ol>
+                            <li>访问Python官方网站(https://www.python.org/)</li>
+                            <li>下载适合您操作系统的最新版本</li>
+                            <li>运行安装程序并按照提示操作</li>
+                            <li>确保在安装过程中勾选"Add Python to PATH"选项</li>
+                            <li>完成安装后，打开命令提示符或终端，输入<code>python --version</code>验证安装</li>
+                        </ol>
+
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Python代码示例">
+
+                        <h2>第一个Python程序</h2>
+                        <p>让我们从经典的"Hello, World!"程序开始：</p>
+                        <pre><code># 这是一个简单的Python程序
+print("Hello, World!")</code></pre>
+                        <p>将上面的代码保存为<code>hello.py</code>文件，然后在命令行中运行：</p>
+                        <pre><code>python hello.py</code></pre>
+                        <p>您应该会看到输出：<code>Hello, World!</code></p>
+
+                        <h2>Python基础语法视频教程</h2>
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/rfscVS0vtbw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+
+                        <h2>Python数据类型</h2>
+                        <p>Python有多种内置数据类型，以下是主要的几种：</p>
+                        <table>
+                            <tr>
+                                <th>数据类型</th>
+                                <th>示例</th>
+                                <th>描述</th>
+                            </tr>
+                            <tr>
+                                <td>整数(int)</td>
+                                <td>5, -3, 0</td>
+                                <td>不带小数点的数字</td>
+                            </tr>
+                            <tr>
+                                <td>浮点数(float)</td>
+                                <td>3.14, -0.001</td>
+                                <td>带小数点的数字</td>
+                            </tr>
+                            <tr>
+                                <td>字符串(str)</td>
+                                <td>"hello", 'Python'</td>
+                                <td>文本数据</td>
+                            </tr>
+                            <tr>
+                                <td>布尔值(bool)</td>
+                                <td>True, False</td>
+                                <td>逻辑值</td>
+                            </tr>
+                            <tr>
+                                <td>列表(list)</td>
+                                <td>[1, 2, 3], ['a', 'b']</td>
+                                <td>有序可变集合</td>
+                            </tr>
+                            <tr>
+                                <td>元组(tuple)</td>
+                                <td>(1, 2, 3), ('a', 'b')</td>
+                                <td>有序不可变集合</td>
+                            </tr>
+                            <tr>
+                                <td>字典(dict)</td>
+                                <td>{'name': 'John', 'age': 30}</td>
+                                <td>键值对集合</td>
+                            </tr>
+                        </table>
+
+                        <h2>下一步学习建议</h2>
+                        <p>掌握了Python基础后，您可以考虑以下方向深入学习：</p>
+                        <ul>
+                            <li>面向对象编程(OOP)</li>
+                            <li>文件操作和异常处理</li>
+                            <li>使用NumPy和Pandas进行数据分析</li>
+                            <li>使用Django或Flask进行Web开发</li>
+                            <li>使用TensorFlow或PyTorch进行机器学习</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 相关教程 -->
+                <div class="related-tutorials">
+                    <h3 class="section-title">相关教程</h3>
+                    <div class="tutorial-cards">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="数据分析教程" class="card-img">
+                            <div class="card-content">
+                                <h3 class="card-title">数据分析与可视化</h3>
+                                <div class="card-meta">
+                                    <span><i class="far fa-clock"></i> 10小时</span>
+                                    <span><i class="far fa-user"></i> 王分析师</span>
+                                    <span><i class="far fa-star"></i> 4.7</span>
+                                </div>
+                                <p class="card-text">使用Python和Pandas进行数据分析，Matplotlib和Seaborn进行数据可视化。</p>
+                                <a href="article.html?id=3" class="btn">查看详情</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="机器学习教程" class="card-img">
+                            <div class="card-content">
+                                <h3 class="card-title">机器学习入门</h3>
+                                <div class="card-meta">
+                                    <span><i class="far fa-clock"></i> 20小时</span>
+                                    <span><i class="far fa-user"></i> 孙博士</span>
+                                    <span><i class="far fa-star"></i> 4.7</span>
+                                </div>
+                                <p class="card-text">从零开始学习机器学习基础，包括监督学习、无监督学习和神经网络。</p>
+                                <a href="article.html?id=6" class="btn">查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>关于LearnHub</h3>
+                    <p>LearnHub致力于提供高质量的在线学习资源，帮助人们掌握实用技能，提升职业竞争力。</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>快速链接</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="#">所有教程</a></li>
+                        <li><a href="#">最新教程</a></li>
+                        <li><a href="#">热门教程</a></li>
+                        <li><a href="#">学习路径</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>教程分类</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">编程开发</a></li>
+                        <li><a href="#">设计创意</a></li>
+                        <li><a href="#">数据分析</a></li>
+                        <li><a href="#">人工智能</a></li>
+                        <li><a href="#">办公效率</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>联系我们</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 北京市海淀区科技园路88号</p>
+                    <p><i class="fas fa-phone"></i> +86 10 8888 8888</p>
+                    <p><i class="fas fa-envelope"></i> contact@learnhub.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 LearnHub. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
