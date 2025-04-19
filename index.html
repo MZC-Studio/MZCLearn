@@ -44,90 +44,7 @@
             <section class="tutorial-section">
                 <h2 class="section-title">精选教程</h2>
                 <div class="tutorial-cards">
-                    <!-- 教程卡片1 -->
-                    <div class="card">
-                        <img src="/pic/mc.png" alt="MC教程" class="card-img">
-                        <div class="card-content">
-                            <h3 class="card-title">PCL启动器下载MC，整合包导入，模组下载教程</h3>
-                            <div class="card-meta">
-                                <span><i class="far fa-clock"></i> 4分钟阅读</span>
-                            </div>
-                            <p class="card-text">本教程可帮助电脑新手快速玩上MC Java版</p>
-                            <p class="card-text">分类:游戏</p>
-                            <a href="article.html?id=1" class="btn">查看详情</a>
-                        </div>
-                    </div>
-
-                    <!-- 教程卡片2 -->
-                    <div class="card">
-                        <img src="/pic/scr.png" alt="编程教程" class="card-img">
-                        <div class="card-content">
-                            <h3 class="card-title">Scratch初学者教程</h3>
-                            <div class="card-meta">
-                                <span><i class="far fa-clock"></i> 5分钟阅读</span>
-                            </div>
-                            <p class="card-text">学习Scratch图形化编程，让电脑初学者们创建好玩的项目。</p>
-                            <a href="article.html?id=2" class="btn">查看详情</a>
-                        </div>
-                    </div>
-
-                    <!-- 教程卡片3 -->
-                    <div class="card">
-                        <img src="/pic/scrhigh.png" alt="数据分析教程" class="card-img">
-                        <div class="card-content">
-                            <h3 class="card-title">Scratch的一些进阶技巧</h3>
-                            <div class="card-meta">
-                                <span><i class="far fa-clock"></i> 5分钟阅读</span>
-                            </div>
-                            <p class="card-text">本教程适合那些已经进阶水平的Scratcher们，可以利用这些技巧完成高阶项目。</p>
-                            <a href="article.html?id=3" class="btn">查看详情</a>
-                        </div>
-                    </div>
-
-                    <!-- 教程卡片4 -->
-                    <div class="card">
-                        <img src="/pic/python.png" alt="编程教程" class="card-img">
-                        <div class="card-content">
-                            <h3 class="card-title">Python-编程语言</h3>
-                            <div class="card-meta">
-                                <span><i class="far fa-clock"></i> 7分钟阅读</span>
-                            </div>
-                            <p class="card-text">学习Python编程语言，用真正的编程语言完成你的项目，适合那些想挑战更高阶项目的人。</p>
-                            <a href="article.html?id=4" class="btn">查看详情</a>
-                        </div>
-                    </div>
-
-                    <!-- 教程卡片5 -->
-                    <div class="card">
-                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="前端教程" class="card-img">
-                        <div class="card-content">
-                            <h3 class="card-title">现代前端开发实践</h3>
-                            <div class="card-meta">
-                                <span><i class="far fa-clock"></i> 15小时</span>
-                                <span><i class="far fa-user"></i> 前端</span>
-                                <span><i class="far fa-star"></i> 4.9</span>
-                            </div>
-                            <p class="card-text">学习React、Vue等现代前端框架，掌握组件化开发和状态管理。</p>
-                            <a href="article.html?id=5" class="btn">查看详情</a>
-                        </div>
-                    </div>
-
-                    <!-- 教程卡片6 -->
-                    <div class="card">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="机器学习教程" class="card-img">
-                        <div class="card-content">
-                            <h3 class="card-title">机器学习入门</h3>
-                            <div class="card-meta">
-                                <span><i class="far fa-clock"></i> 20小时</span>
-                                <span><i class="far fa-user"></i> 孙博士</span>
-                                <span><i class="far fa-star"></i> 4.7</span>
-                            </div>
-                            <p class="card-text">从零开始学习机器学习基础，包括监督学习、无监督学习和神经网络。</p>
-                            <a href="article.html?id=6" class="btn">查看详情</a>
-                        </div>
-                    </div>
                 </div>
-
                 <!-- 分页导航 -->
                 <!--<div class="pagination">-->
                     <!--<a href="#" class="btn btn-outline disabled"><i class="fas fa-angle-left"></i> 上一页</a>-->
@@ -178,5 +95,121 @@
             </div>
         </div>
     </footer>
+    <script>
+        // 教程数据
+        const tutorials = [
+            {
+                id: 1,
+                title: "PCL启动器下载MC，整合包导入，模组下载教程",
+                image: "/pic/mc.png",
+                alt: "MC教程",
+                duration: "4分钟阅读",
+                author: "MZC",
+                description: "本教程可帮助电脑新手快速玩上MC Java版。 分类:游戏"
+            },
+            {
+                id: 2,
+                title: "Scratch初学者教程",
+                image: "/pic/scr.png",
+                alt: "编程教程",
+                duration: "5分钟阅读",
+                author: "MZC-DEV",
+                description: "学习Scratch图形化编程，让电脑初学者们创建好玩的项目。 分类:编程"
+            },
+            {
+                id: 3,
+                title: "Scratch的一些进阶技巧",
+                image: "/pic/scrhigh.png",
+                alt: "编程教程",
+                duration: "5分钟阅读",
+                author: "MZC-DEV",
+                description: "本教程适合那些已经进阶水平的Scratcher们，可以利用这些技巧完成高阶项目。"
+            },
+            {
+                id: 4,
+                title: "Python-编程语言",
+                image: "/pic/python.png",
+                alt: "编程教程",
+                duration: "7分钟阅读",
+                author: "MZC-DEV",
+                description: "学习Python编程语言，用真正的编程语言完成你的项目，适合那些想挑战更高阶项目的人。"
+            },
+            {
+                id: 5,
+                title: "HTML前端开发初级（1）",
+                image: "/pic/htmldev1.png",
+                alt: "前端教程",
+                duration: "8分钟阅读",
+                author: "MZC-DEV",
+                description: "学习如何使用HTML编写你的第一个网页，以及一些基本标签的使用方法。"
+            },
+            {
+                id: 6,
+                title: "机器学习入门",
+                image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+                alt: "机器学习教程",
+                duration: "20小时",
+                author: "MZC-DEV",
+                description: "从零开始学习机器学习基础，包括监督学习、无监督学习和神经网络。"
+            },
+            {
+                id: 7,
+                title: "Web安全基础",
+                image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+                alt: "安全教程",
+                duration: "8小时",
+                author: "MZC-DEV",
+                description: "了解常见的Web安全威胁和防御措施，包括XSS、CSRF、SQL注入等。"
+            },
+            {
+                id: 8,
+                title: "Python入门（1）",
+                image: "/pic/pythonmid1",
+                alt: "编程教程",
+                duration: "8分钟阅读",
+                author: "MZC-DEV",
+                description: "Python入门，学习Python的更多语法，代码结构，函数。"
+            }
+        ];
+
+        // 随机选择教程函数
+        function getRandomTutorials(count) {
+            // 复制数组以避免修改原数组
+            const shuffled = [...tutorials].sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, count);
+        }
+
+        // 生成教程卡片HTML
+        function generateTutorialCard(tutorial) {
+            return `
+                <div class="card">
+                    <img src="${tutorial.image}" alt="${tutorial.alt}" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">${tutorial.title}</h3>
+                        <div class="card-meta">
+                            <span><i class="far fa-clock"></i> ${tutorial.duration}</span>
+                            <span><i class="far fa-user"></i> ${tutorial.author}</span>
+                        </div>
+                        <p class="card-text">${tutorial.description}</p>
+                        <a href="article${tutorial.id}.html" class="btn">查看详情</a>
+                    </div>
+                </div>
+            `;
+        }
+
+        // 页面加载时随机显示教程
+        document.addEventListener('DOMContentLoaded', function() {
+            const tutorialContainer = document.getElementById('tutorial-container');
+            const randomTutorials = getRandomTutorials(6); // 获取6个随机教程
+            
+            // 清空容器
+            tutorialContainer.innerHTML = '';
+            
+            // 添加随机教程卡片
+            randomTutorials.forEach(tutorial => {
+                tutorialContainer.innerHTML += generateTutorialCard(tutorial);
+            });
+        });
+    </script>
 </body>
 </html>
