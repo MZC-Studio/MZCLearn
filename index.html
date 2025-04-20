@@ -93,6 +93,15 @@
         </section>
     </footer>
     <script>
+        // 滚动时改变导航栏透明度
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 10) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
         // 教程数据
         const tutorials = [
             {
