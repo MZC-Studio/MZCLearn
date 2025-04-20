@@ -481,6 +481,59 @@ footer {
     font-size: 0.9rem;
 }
 
+/* 毛玻璃效果导航栏 */
+header {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* 滚动时加深效果 */
+header.scrolled {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+/* 导航链接悬停效果 */
+.nav-links a {
+    color: var(--dark-color);
+    padding: 8px 12px;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: var(--primary-color);
+}
+
+.nav-links a.active {
+    background: rgba(67, 97, 238, 0.2);
+    color: var(--primary-color);
+}
+
+/* 夜间模式适配 */
+@media (prefers-color-scheme: dark) {
+    header {
+        background: rgba(0, 0, 0, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-links a:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-links a.active {
+        background: rgba(67, 97, 238, 0.3);
+    }
+}
 /* 响应式设计 */
 @media (max-width: 768px) {
     .nav-links {
