@@ -18,7 +18,7 @@
                 </a>
                 <ul class="nav-links">
                     <li><a href="index.html" class="active">首页</a></li>
-                    <li><a href="#">教程</a></li>
+                    <li><a href="#tutorial-section">教程</a></li>
                     <li><a href="#">资源</a></li>
                     <li><a href="#">关于</a></li>
                     <li><a href="#">联系我们</a></li>
@@ -42,7 +42,7 @@
 
             <!-- 教程展示 -->
             <section class="tutorial-section">
-                <h2 class="section-title">精选教程</h2>
+                <h2 class="section-title">推荐教程</h2>
                 <div class="tutorial-cards" id="tutorial-container">
                 </div>
                 <!-- 分页导航 -->
@@ -60,40 +60,41 @@
 
     <!-- 页脚 -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>关于MZCLearn</h3>
-                    <p>MZCLearn致力于提供高质量的在线学习资源，帮助人们掌握实用技能，提升职业竞争力。</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+        <section class="about">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <h3>关于MZCLearn</h3>
+                        <p>MZCLearn致力于提供高质量的在线学习资源，帮助人们掌握实用技能，提升职业竞争力。</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3>快速链接</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="https://mzc-studio.netlify.app">官网主页</a></li>
+                            <li><a href="#">最新教程</a></li>
+                            <li><a href="#">热门教程</a></li>
+                            <li><a href="#">学习路径</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3>联系我们</h3>
+                        <p><i class="fas fa-phone"></i> +86 135 5992 8671</p>
+                        <p><i class="fas fa-envelope"></i> mzc-contact@163.com</p>
                     </div>
                 </div>
-                <div class="footer-column">
-                    <h3>快速链接</h3>
-                    <ul class="footer-links">
-                        <li><a href="index.html">首页</a></li>
-                        <li><a href="https://mzc-studio.netlify.app">官网主页</a></li>
-                        <li><a href="#">最新教程</a></li>
-                        <li><a href="#">热门教程</a></li>
-                        <li><a href="#">学习路径</a></li>
-                    </ul>
-                </div>
-                </div>
-                <div class="footer-column">
-                    <h3>联系我们</h3>
-                    <p><i class="fas fa-phone"></i> +86 135 5992 8671</p>
-                    <p><i class="fas fa-envelope"></i> mzc-contact@163.com</p>
-                </div>
-            </div>
             <div class="copyright">
                 <p>&copy; 2023 MZC-Studio. 保留所有权利。</p>
             </div>
-        </div>
+        </section>
     </footer>
     <script>
         // 教程数据
@@ -188,10 +189,9 @@
                         <div class="card-meta">
                             <span><i class="far fa-clock"></i> ${tutorial.duration}</span>
                             <span><i class="far fa-user"></i> ${tutorial.author}</span>
-                            <span><i class="far fa-star"></i> ${tutorial.rating}</span>
                         </div>
                         <p class="card-text">${tutorial.description}</p>
-                        <a href="article${tutorial.id}.html" class="btn">查看详情</a>
+                        <a href="/article/article${tutorial.id}.html" class="btn">查看详情</a>
                     </div>
                 </div>
             `;
