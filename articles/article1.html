@@ -35,114 +35,170 @@
             </div>
 
             <!-- 教程详情 -->
-            <section class="tutorial-section">
-                <div class="tutorial-detail">
-                    <div class="tutorial-header">
-                        <h1 class="tutorial-title">Python-编程语言</h1>
-                        <div class="tutorial-meta">
-                            <span><i class="far fa-user"></i> MZC-DEV</span>
-                            <span><i class="far fa-calendar-alt"></i> 2025-04-20</span>
-                        </div>
-                    </div>
-
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Python教程" class="tutorial-cover">
-
-                    <div class="tutorial-content">
-                        <h2>Python简介</h2>
-                        <p>Python是一种高级编程语言，以其简洁的语法和强大的功能而闻名。它由Guido van Rossum于1991年首次发布，如今已成为最受欢迎的编程语言之一。</p>
-                        <p>Python的设计哲学强调代码的可读性和简洁性，特别是使用空格缩进来划分代码块，而不是使用大括号或关键字。这使得Python代码看起来非常整洁和易于理解。</p>
-
-                        <h2>为什么选择Python？</h2>
-                        <p>Python具有许多优点，使其成为初学者和专业开发人员的理想选择：</p>
-                        <ul>
-                            <li>简单易学：语法清晰直观，接近自然语言</li>
-                            <li>跨平台：可在Windows、macOS和Linux上运行</li>
-                            <li>丰富的库：拥有庞大的标准库和第三方库生态系统</li>
-                            <li>社区支持：拥有活跃的开发者社区和丰富的学习资源</li>
-                            <li>多用途：可用于Web开发、数据分析、人工智能、科学计算等</li>
-                        </ul>
-
-                        <h2>安装Python</h2>
-                        <p>要开始使用Python，首先需要在计算机上安装Python解释器。以下是安装步骤：</p>
-                        <ol>
-                            <li>访问Python官方网站(https://www.python.org/)</li>
-                            <li>下载适合您操作系统的最新版本</li>
-                            <li>运行安装程序并按照提示操作</li>
-                            <li>确保在安装过程中勾选"Add Python to PATH"选项</li>
-                            <li>完成安装后，打开命令提示符或终端，输入<code>python --version</code>验证安装</li>
-                        </ol>
-
-                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Python代码示例">
-
-                        <h2>第一个Python程序</h2>
-                        <p>让我们从经典的"Hello, World!"程序开始：</p>
-                        <pre><code># 这是一个简单的Python程序
-print("Hello, World!")</code></pre>
-                        <p>将上面的代码保存为<code>hello.py</code>文件，然后在命令行中运行：</p>
-                        <pre><code>python hello.py</code></pre>
-                        <p>您应该会看到输出：<code>Hello, World!</code></p>
-
-                        <h2>Python基础语法视频教程</h2>
-                        <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/rfscVS0vtbw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-
-                        <h2>Python数据类型</h2>
-                        <p>Python有多种内置数据类型，以下是主要的几种：</p>
-                        <table>
-                            <tr>
-                                <th>数据类型</th>
-                                <th>示例</th>
-                                <th>描述</th>
-                            </tr>
-                            <tr>
-                                <td>整数(int)</td>
-                                <td>5, -3, 0</td>
-                                <td>不带小数点的数字</td>
-                            </tr>
-                            <tr>
-                                <td>浮点数(float)</td>
-                                <td>3.14, -0.001</td>
-                                <td>带小数点的数字</td>
-                            </tr>
-                            <tr>
-                                <td>字符串(str)</td>
-                                <td>"hello", 'Python'</td>
-                                <td>文本数据</td>
-                            </tr>
-                            <tr>
-                                <td>布尔值(bool)</td>
-                                <td>True, False</td>
-                                <td>逻辑数据值，只有真（1）和假（0）两种返回值</td>
-                            </tr>
-                            <tr>
-                                <td>列表(list)</td>
-                                <td>[1, 2, 3], ['a', 'b']</td>
-                                <td>有序可变集合</td>
-                            </tr>
-                            <tr>
-                                <td>元组(tuple)</td>
-                                <td>(1, 2, 3), ('a', 'b')</td>
-                                <td>有序不可变集合</td>
-                            </tr>
-                            <tr>
-                                <td>字典(dict)</td>
-                                <td>{'name': 'John', 'age': 30}</td>
-                                <td>键值对集合</td>
-                            </tr>
-                        </table>
-                        <a href="./article8.html">>>>继续学习Python入门（1）</a>
-                        <h2>下一步学习建议</h2>
-                        <p>掌握了Python的所有基础后，您可以考虑以下方向深入学习：</p>
-                        <ul>
-                            <li>面向对象编程(OOP)</li>
-                            <li>文件操作和异常处理</li>
-                            <li>使用NumPy和Pandas进行数据分析</li>
-                            <li>使用Django或Flask进行Web开发</li>
-                            <li>使用TensorFlow或PyTorch进行机器学习</li>
-                        </ul>
+            <div class="tutorial-detail">
+                <div class="tutorial-header">
+                    <h1 class="tutorial-title">PCL启动器下载MC，整合包导入，模组下载教程</h1>
+                    <div class="tutorial-meta">
+                        <span><i class="far fa-user"></i> MZC</span>
+                        <span><i class="far fa-calendar-alt"></i> 2025-4-20</span>
                     </div>
                 </div>
+            
+                <img src="https://images.unsplash.com/photo-1587573089734-599851b0c8b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Minecraft游戏截图" class="tutorial-cover">
+            
+                <div class="tutorial-content">
+                    <h2>一、PCL启动器简介</h2>
+                    <p>PCL启动器是国内最受欢迎的Minecraft第三方启动器之一，具有以下特点：</p>
+                    <ul>
+                        <li>支持多个Minecraft版本快速下载安装</li>
+                        <li>一键安装Forge/Fabric等主流Mod加载器</li>
+                        <li>便捷的整合包导入功能</li>
+                        <li>内置Mod搜索下载功能</li>
+                        <li>占用资源少，运行流畅</li>
+                    </ul>
+            
+                    <h2>二、PCL启动器下载与安装</h2>
+                    <h3>1. 下载PCL启动器</h3>
+                    <p>访问PCL启动器官网或可靠下载源获取最新版本：</p>
+                    <ol>
+                        <li>打开浏览器访问 <a href="https://ltcat.lanzoum.com/ipFqY0itprkf" target="_blank">PCL启动器官网</a></li>
+                        <li>点击任意一个下载按钮，就会开始下载</li>
+                    </ol>
+                    
+                    <img src="https://i.imgur.com/Jqk5X9m.png" alt="PCL启动器下载页面">
+            
+                    <h3>2. 安装PCL启动器</h3>
+                    <p>下载完成后，按照以下步骤安装：</p>
+                    <ol>
+                        <li>解压这个压缩包（右键，点击带“解压”的按钮）</li>
+                        <li>打开解压过后的文件夹</li>
+                        <li>打开文件夹里的PCL程序</li>
+                        <li>等待一会</li>
+                        <li>看到PCL图标即为启动成功</li>
+                    </ol>
+            
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/examplevideo1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+            
+                    <h2>三、下载并安装Minecraft</h2>
+                    <h3>1. 登录/注册正版账号或使用离线登录</h3>
+                    <p>登录/注册正版账号（微软账户）：</p>
+                    <ol>
+                        <li>打开PCL启动器，点击左上角的"正版"按钮</li>
+                        <li>如果有账号，点击"登录"按钮</li>
+                        <li>按照提示完成登录流程</li>
+                        <li>如果没账号，想购买正版MC，点击下方的"购买正版"按钮</li>
+                        <li>按照网站完成账号购买流程，随后在启动器登录账号</li>
+                    </ol>
+                    <p>使用离线账号：</p>
+                    <ol>
+                        <li>打开PCL启动器，点击左上角的"离线"按钮</li>
+                        <li>在框内输入你想要的名字即可</li>
+                        <p class="notice">注意：使用离线登录将会导致你不能正常本地联机，并且不能进入开启账户验证的服务器。在1.19.1版本以后不能自定义皮肤。</p>
+                    </ol>
+                    
+                    <img src="https://i.imgur.com/AbCdEfG.png" alt="PCL登录界面">
+            
+                    <h3>2. 下载Minecraft游戏</h3>
+                    <p>登录后可以下载游戏：</p>
+                    <ol>
+                        <li>点击"下载"选项卡</li>
+                        <li>选择你想玩的版本（推荐最新正式版）</li>
+                        <li>选择你要的模组/光影加载器（推荐最新正式版。Forge/Fabric/Neoforge为模组加载器，Optifine为光影加载器，但与模组兼容性较差，请谨慎安装或寻找替代品。）</li>
+                        <li>点击"开始下载"按钮</li>
+                        <li>等待下载和安装完成（速度取决于你的电脑）</li>
+                    </ol>
+                    
+                    <h2>四、模组下载与管理</h2>
+                    <h3>1. 通过PCL下载模组</h3>
+                    <p>PCL内置模组下载功能：</p>
+                    <ol>
+                        <li>选择"下载模组"选项卡</li>
+                        <li>点击"Mod"按钮</li>
+                        <li>搜索你想要的模组（中文/英文名均可），点击进入模组下载界面</li>
+                        <li>选择你对应的版本，点击里面的文件开始下载（注：有些资源不能很好识别mod加载器，导致多个加载器混在一起，选择文件名里带有你加载器名称的即可）</li>
+                        <li>下载完成后会自动安装</li>
+                    </ol>
+            
+                    <h3>2. 手动安装模组</h3>
+                    <p>也可以手动下载模组安装：</p>
+                    <ol>
+                        <li>从<a href="https://www.curseforge.com" target="_blank">CurseForge</a>或<a href="https://www.mcmod.cn" target="_blank">MC百科</a>下载模组</li>
+                        <li>确保模组版本与游戏版本匹配</li>
+                        <li>在PCL中点击"模组管理"</li>
+                        <li>选择"本地模组"选项卡</li>
+                        <li>将下载的.jar文件拖入窗口</li>
+                        <li>重启游戏生效</li>
+                    </ol>
+                    
+                    <h2>五、整合包导入教程</h2>
+                    <h3>1. 下载整合包</h3>
+                    <p>从PCL的下载选项卡，点击“整合包”获取整合包，或者安装<a href="https://mzc-studio.netlify.app/mc.html">我们制作的整合包</a>🙂</p>
+            
+                    <h3>2. 导入你自行下载的整合包</h3>
+                    <p>PCL支持便捷的本地整合包导入：</p>
+                    <ol>
+                        <li>打开下载好的整合包</li>
+                        <li>找到你下整合包文件里的MRPACK文件（.zip/.mrpack等格式）</li>
+                        <li>把它拖到PCL的窗口里</li>
+                        <li>等待导入完成</li>
+                        <li>在游戏列表中选择导入的整合包启动</li>
+                    </ol>
+            
+                    <img src="https://i.imgur.com/XyZ1234.png" alt="整合包导入界面">
+            
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/examplevideo2" frameborder="0" allowfullscreen></iframe>
+                    </div>
+            
+                    <h2>六、常见问题解答</h2>
+                    <h3>Q1: 启动游戏时崩溃怎么办？</h3>
+                    <p>A: 尝试以下解决方案：</p>
+                    <ul>
+                        <li>检查Java版本是否匹配（PCL会自动安装合适版本）</li>
+                        <li>减少模组数量或检查模组兼容性</li>
+                        <li>增加游戏分配的内存（在启动设置中调整）</li>
+                        <li>查看崩溃日志寻找具体原因</li>
+                    </ul>
+            
+                    <h3>Q2: 如何更新模组？</h3>
+                    <p>A: 在"版本设置"界面，找到“Mod管理”：</p>
+                    <ol>
+                        <li>找到需要更新的模组</li>
+                        <li>点击“可更新”按钮，如果有模组显示在这里，点击那个模组，再点击下方的"更新"按钮</li>
+                        <li>或者，手动下载新版模组文件来替换旧版的</li>
+                    </ol>
+            
+                    <h3>Q3: 整合包导入失败怎么办？</h3>
+                    <p>A: 可能原因和解决方案：</p>
+                    <ul>
+                        <li>文件损坏 - 重新下载整合包</li>
+                        <li>格式不支持 - 尝试其他启动器或手动解压</li>
+                        <li>缺少依赖 - 根据错误提示安装所需组件</li>
+                    </ul>
+            
+                    <h2>七、进阶技巧</h2>
+                    <h3>1. 多版本共存</h3>
+                    <p>PCL支持同时安装多个Minecraft版本：</p>
+                    <ol>
+                        <li>在"下载"界面选择不同版本</li>
+                        <li>每个版本可以单独配置模组和设置（须在全局设置里打开“版本隔离”选项）</li>
+                        <li>通过不同名称区分游戏实例</li>
+                    </ol>
+            
+                    <h3>2. 自定义JVM参数</h3>
+                    <p>优化游戏性能：</p>
+                    <ol>
+                        <li>选择游戏版本点击"设置"</li>
+                        <li>找到"JVM参数"选项</li>
+                        <li>根据电脑配置调整内存分配（如-Xmx4G表示分配4GB内存）</li>
+                        <li>高级用户可添加优化参数</li>
+                    </ol>
+                    
+                    <p class="notice">注意：使用第三方启动器时请遵守Minecraft的EULA，支持正版游戏。</p>
+                </div>
+            </div>
 
                 <!-- 相关教程 -->
                 <div class="related-tutorials">
