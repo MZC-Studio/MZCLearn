@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python-编程语言 - MZCLearn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/index.html" class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    MZCLearn
+                </a>
+                <ul class="nav-links">
+                    <li><a href="/index.html">首页</a></li>
+                    <li><a href="#" class="active">教程</a></li>
+                    <li><a href="#">资源</a></li>
+                    <li><a href="#about">关于</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+        <div class="container">
+            <!-- 返回按钮 -->
+            <div class="back-button">
+                <a href="/index.html" class="btn btn-outline"><i class="fas fa-arrow-left"></i> 返回教程列表</a>
+            </div>
+
+            <!-- 教程详情 -->
+            <section class="tutorial-section">
+                <div class="tutorial-detail">
+                    <div class="tutorial-header">
+                        <h1 class="tutorial-title">Python 快速入门</h1>
+                    </div>
+                
+                    <div class="tutorial-content">
+                        <h2>1. 基础语法</h2>
+                        
+                        <h3>打印输出</h3>
+                        <pre><code>print("Hello World!") #大部分Python基础的函数都是以下结构：函数名(参数)</code></pre>
+                        
+                        <h3>变量</h3>
+                        <pre><code>name = "小明" #将name这个变量定义为字符串“小明”，“=”这个符号在很多编程语言中代表定义而非等于号，等于其实要表达成 == 。
+                age = 20 #定义为整数 20
+                price = 9.9 #定义为浮点数 9.9
+                answer = input("你这瓜多少钱一斤啊？") #input函数，用于提问，参数内为提问的问题，会输出参数内的东西并等待用户的回答，用户回答才会继续执行下面的代码，返回的参数就是用户所回答的。
+                is_student = True #将is_student这个变量定义为布尔值（只有True（条件为真）或False（条件为假）），大家都看出来了吗，其实变量可以被定义为字符串，浮点数，整数，甚至有返回参数的函数！</code></pre>
+                        
+                        <h3>基本运算</h3>
+                        <pre><code>a = 10 + 5    # 加法
+                b = 10 * 2   # 乘法
+                c = 10 / 3   # 除法
+                d = 10 % 3   # 取除法运算过后的余数</code></pre>
+                
+                        <h2>2. 流程控制</h2>
+                        
+                        <h3>条件判断</h3>
+                        <pre><code>age = 18
+                if age >= 18: # 返回True（真）或False（假）
+                    print("成年人")
+                else:
+                    print("未成年人")</code></pre>
+                        
+                        <h3>循环</h3>
+                        <pre><code># for循环语句（用于循环代码）
+                for i in range(5): #循环5次，每次把i增加1
+                    print(i)  # 输出0-4
+                
+                # while循环语句（用于循环代码）
+                count = 0
+                while count < 3: #在count小于3时条件为真，执行循环内语句1次，大于等于3时则相反
+                    print(count)
+                    count += 1 #将变量增加1</code></pre>
+                
+                        <h2>3. 常用数据结构</h2>
+                        
+                        <h3>列表</h3>
+                        <pre><code>fruits = ["苹果", "香蕉", "橙子"] #将fruits定义成一个列表。（提示：电脑认为的1实际上是0！，第1项实际上要表示成第0项！依此类推。）
+                print(fruits[0])  # 打印fruits列表的第0项：苹果
+                fruits.append("西瓜")  # 添加元素</code></pre>
+                        
+                        <h3>字典（类似列表，可以给每一个键配对一个值，拿游戏数据做例子：gamedata = {"名称": "小明", "血量": "90"}）</h3>
+                        <pre><code>person = {"name": "小明", "age": 20}
+                print(person["name"])  # 小明
+                person["city"] = "北京"  # 添加键值对</code></pre>
+                
+                        <h2>4. 函数使用</h2>
+                        
+                        <h3>定义函数</h3>
+                        <pre><code>def greet(name):
+                    print("你好," + name)
+                    
+                greet("小红")  # 调用函数↑↑↑</code></pre>
+                        
+                        <h3>返回值</h3>
+                        <pre><code>def add(a, b):
+                    return a + b #作用：运行此函数时，根据此语句返回此函数内的参数或局部变量 语法：return 要返回的东西（任何数据类型，变量，其他函数，运算语句）
+                    
+                result = add(3, 5)  # result=8</code></pre>
+                
+                        <h2>5. 文件操作</h2>
+                        <pre><code># 写入文件
+                with open("test.txt", "w") as f:
+                    f.write("Python很简单")
+                
+                # 读取文件
+                with open("test.txt", "r") as f:
+                    content = f.read()
+                    print(content)</code></pre>
+                
+                        <h2>6. 下一步学习</h2>
+                        <ul>
+                            <li>学习更多数据类型：元组、集合</li>
+                            <li>掌握模块和包的使用</li>
+                            <li>尝试面向对象编程</li>
+                            <li>练习小项目：计算器、待办事项列表</li>
+                        </ul>
+                    </div>
+                </div>
+                            </section>
+                        </div>
+                    </main>
+                
+                    <!-- 页脚 -->
+                    <footer>
+                        <section id="about">
+                            <div class="container">
+                                <div class="footer-content">
+                                    <div class="footer-column">
+                                        <h3>关于MZCLearn</h3>
+                                        <p>关于MZCLearn致力于提供高质量的在线学习资源，帮助人们掌握实用技能。</p>
+                                        <div class="social-links">
+                                            <a href="#"><i class="/pic/icon/b.png"></i></a>
+                                            <a href="#"><i class="/pic/icon/wb.png"></i></a>
+                                            <a href="#"><i class="/pic/icon/dy.png"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="footer-column">
+                                        <h3>快速链接</h3>
+                                        <ul class="footer-links">
+                                            <li><a href="/index.html">首页</a></li>
+                                            <li><a href="/allts.html">所有教程</a></li>
+                                            <li><a href="/more/learnpath.html">学习路径</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-column">
+                                        <h3>联系我们</h3>
+                                        <p><i class="fas fa-phone"></i> +86 135 5992 8671</p>
+                                        <p><i class="fas fa-envelope"></i> mzc-contact@163.com</p>
+                                    </div>
+                                </div>
+                                <div class="copyright">
+                                    <p>&copy; 2025 MZCLearn. 保留所有权利。</p>
+                                </div>
+                            </div>
+        </section>
+    </footer>
+    <script>
+        // 滚动时改变导航栏透明度
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 10) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
